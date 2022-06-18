@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/tutorials/html/basics/favicon.png"> -->
+    <!--============== Main (Css) File ==============-->
+    <link rel="stylesheet" href="main.css">
+    <!--============== Css Normalize File ==============-->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- ============== Font Awesome Link ==============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--============= Link Swiper's CSS ==============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--============== Light Gallery Libary Link CSS ==============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="header">
+        <div class="container">
+            <!-- Navigation Bar ----->
+            <nav class="navbar">
+
+                <!-- Logo ------>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>food.</span>
+                </a>
+
+                <!-- Nav Links ------>
+                <ul class="nav-links">
+                    <li class="link-item">
+                        <a href="#home" class="link active">home</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#about" class="link">about</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#dishes" class="link">food</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#gallery" class="link">gallery</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#menu" class="link">menu</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#order" class="link">order</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#blogs" class="link">blogs</a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Links Btn --------->
+                <button class="toggle">
+                    <span class="burger-icon"></span>
+                </button>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+<!--=========================================================================-->
+    <!-- Start Landing Page Slider -->
+    <section id="home">
+        <!-- Previus Btn -->
+        <button class="btn prev">
+            <i class="fas fa-angle-left"></i>
+        </button>
+        <!-- Home Slide 1 ---->
+        <div class="slide">
+            <img src="img/home-slide-1.jpg" alt="home-slide" class="img-fluid">
+            <!-- Title ----->
+            <div class="title">
+                <span>outstanding food</span>
+                <h1 class="text">delicious<br>cookking</h1>
+                <!-- Special Link -->
+                <a href="#" class="special-link">get started</a>
+            </div>
+        </div>
+        <!-- Home Slide 2 ---->
+        <div class="slide">
+            <img src="img/home-slide-2.jpg" alt="home-slide" class="img-fluid">
+            <!-- Title ----->
+            <div class="title">
+                <span>outstanding food</span>
+                <h1 class="text">morning<br>moment</h1>
+                <!-- Special Link -->
+                <a href="#" class="special-link">get started</a>
+            </div>
+        </div>
+        <!-- Home Slide 3 ---->
+        <div class="slide">
+            <img src="img/home-slide-3.jpg" alt="home-slide" class="img-fluid">
+            <!-- Title ----->
+            <div class="title">
+                <span>outstanding food</span>
+                <h1 class="text">authentic<br>kitchen</h1>
+                <!-- Special Link -->
+                <a href="#" class="special-link">get started</a>
+            </div>
+        </div>
+        <!-- Next Btn -->
+        <button class="btn next">
+            <i class="fas fa-angle-right"></i>
+        </button>
+    </section>
+    <!-- End Landing Page Slider -->
+<!--=========================================================================-->
+    <!-- Start About Us Section -->
+    <section id="about">
+        <div class="container">
+            <!-- Row ------->
+            <div class="row">
+
+                <!-- Col 1 ----->
+                <div class="col">
+                    <img src="img/about-img.png" alt="about-img" class="img-fluid">
+                </div>
+
+                <!-- Col 2 ----->
+                <div class="col">
+                    <!-- Title ------->
+                    <div class="title">
+                        <h2 class="text">wlcome to our restaurant</h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet quis expedita totam cupiditate vel quam vero voluptas, voluptatibus
+                            aperiam quasi autem error nihil atque adipisci quae hic corporis odit excepturi.
+                            </p>
+                            <!-- Special Link -->
+                            <a href="#" class="special-link">read more</a>
+                    </div>
+                    <!-- About Content -->
+                    <div class="about-content">
+                        <!-- Box 1 -->
+                        <div class="box">
+                            <i class="fas fa-hamburger fa-2x"></i>
+                            <span class="text">quality food</span>
+                        </div>
+                        <!-- Box 2 -->
+                        <div class="box">
+                            <i class="fas fa-cocktail fa-2x"></i>
+                            <span class="text">food & drinks</span>
+                        </div>
+                        <!-- Box 3 -->
+                        <div class="box">
+                            <i class="fas fa-hamburger fa-2x"></i>
+                            <span class="text">expert chefs</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+<!--=========================================================================-->
+    <!-- Start Popular Dishes Section -->
+    <section id="dishes">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="sec-title">
+                <h3 class="h2" data-title="our delicious food">our delicious food</h3>
+                <p class="text">popular dishes</p>
+            </div>
+
+            <!-- Row ---------->
+            <div class="row">
+                <!-- Swiper --------------->
+                <div class="swiper slider">
+
+                    <div class="swiper-wrapper" style="padding: 30px 0 50px;">
+
+                        <!-- Slide Dish 1 ------------>
+                        <div class="swiper-slide dish" data-dish="card-1">
+                            <!-- Image -->
+                            <div class="image">
+                                <img src="img/food-img-1.png" alt="food" class="img-fluid">
+                            </div>
+                            <!-- Text ---->
+                            <div class="text">
+                                <strong>delicious food</strong>
+                                    <span class="price">$45.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide Dish 2 ------------>
+                        <div class="swiper-slide dish" data-dish="card-2">
+                            <!-- Image -->
+                            <div class="image">
+                                <img src="img/food-img-2.png" alt="food" class="img-fluid">
+                            </div>
+                            <!-- Text ---->
+                            <div class="text">
+                                <strong>delicious food</strong>
+                                <span class="price">$35.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide Dish 3 ------------>
+                        <div class="swiper-slide dish" data-dish="card-3">
+                            <!-- Image -->
+                            <div class="image">
+                                <img src="img/food-img-3.png" alt="food" class="img-fluid">
+                            </div>
+                            <!-- Text ---->
+                            <div class="text">
+                                <strong>delicious food</strong>
+                                <span class="price">$25.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide Dish 4 ------------>
+                        <div class="swiper-slide dish" data-dish="card-4">
+                            <!-- Image -->
+                            <div class="image">
+                                <img src="img/food-img-4.png" alt="food" class="img-fluid">
+                            </div>
+                            <!-- Text ---->
+                            <div class="text">
+                                <strong>delicious food</strong>
+                                <span class="price">$20.99</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide Dish 5 ------------>
+                        <div class="swiper-slide dish" data-dish="card-5">
+                            <!-- Image -->
+                            <div class="image">
+                                <img src="img/food-img-5.png" alt="food" class="img-fluid">
+                            </div>
+                            <!-- Text ---->
+                            <div class="text">
+                                <strong>delicious food</strong>
+                                <span class="price">$60.40</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Popular Dishes Section -->
+<!--=========================================================================-->
+    <!-- Strat Dishes Cards Details -->
+    <div class="dishes-details">
+        <!-- Close Btn -->
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="container">
+
+            <!-- Dish Card 1 ------>
+            <div class="dish-card" data-card="card-1">
+                <!-- Image -->
+                <div class="image">
+                    <img src="img/food-img-1.png" alt="food" class="img-fluid">
+                </div>
+                <!-- Card Body ------>
+                <div class="card-body">
+                    <strong>delicious food</strong>
+                    <!-- Rate ------>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor,
+                        sit amet<br>consectetur adipisicing elit.
+                    </p>
+                    <!-- Price -->
+                    <span class="price">$30.99</span>
+                    <!-- Spacial Link -->
+                    <a href="#" class="special-link">buy now</a>
+                </div>
+            </div>
+
+            <!-- Dish Card 2 ------>
+            <div class="dish-card" data-card="card-2">
+                <!-- Image -->
+                <div class="image">
+                    <img src="img/food-img-2.png" alt="food" class="img-fluid">
+                </div>
+                <!-- Card Body ------>
+                <div class="card-body">
+                    <strong>delicious food</strong>
+                    <!-- Rate ------>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor,
+                        sit amet<br>consectetur adipisicing elit.
+                    </p>
+                    <!-- Price -->
+                    <span class="price">$30.99</span>
+                    <!-- Spacial Link -->
+                    <a href="#" class="special-link">buy now</a>
+                </div>
+            </div>
+
+            <!-- Dish Card 3 ------>
+            <div class="dish-card" data-card="card-3">
+                <!-- Image -->
+                <div class="image">
+                    <img src="img/food-img-3.png" alt="food" class="img-fluid">
+                </div>
+                <!-- Card Body ------>
+                <div class="card-body">
+                    <strong>delicious food</strong>
+                    <!-- Rate ------>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor,
+                        sit amet<br>consectetur adipisicing elit.
+                    </p>
+                    <!-- Price -->
+                    <span class="price">$30.99</span>
+                    <!-- Spacial Link -->
+                    <a href="#" class="special-link">buy now</a>
+                </div>
+            </div>
+
+            <!-- Dish Card 4 ------>
+            <div class="dish-card" data-card="card-4">
+                <!-- Image -->
+                <div class="image">
+                    <img src="img/food-img-4.png" alt="food" class="img-fluid">
+                </div>
+                <!-- Card Body ------>
+                <div class="card-body">
+                    <strong>delicious food</strong>
+                    <!-- Rate ------>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor,
+                        sit amet<br>consectetur adipisicing elit.
+                    </p>
+                    <!-- Price -->
+                    <span class="price">$30.99</span>
+                    <!-- Spacial Link -->
+                    <a href="#" class="special-link">buy now</a>
+                </div>
+            </div>
+
+            <!-- Dish Card 5 ------>
+            <div class="dish-card" data-card="card-5">
+                <!-- Image -->
+                <div class="image">
+                    <img src="img/food-img-5.png" alt="food" class="img-fluid">
+                </div>
+                <!-- Card Body ------>
+                <div class="card-body">
+                    <strong>delicious food</strong>
+                    <!-- Rate ------>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor,
+                        sit amet<br>consectetur adipisicing elit.
+                    </p>
+                    <!-- Price -->
+                    <span class="price">$30.99</span>
+                    <!-- Spacial Link -->
+                    <a href="#" class="special-link">buy now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Dishes Cards Details -->
+<!--=========================================================================-->
+    <!-- Start Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="sec-title">
+                <h3 class="h2" data-title="our untold stories">our untold stories</h3>
+                <p class="text">our gallery</p>
+            </div>
+
+            <!-- gallery-container ------->
+            <div class="gallery-container">
+
+                <!-- Col 1 ----------->
+                <div href="#" class="food-slide">
+                        <img src="img/food-galler-img-1.jpg" alt="food" class="img-fluid">
+                        <!-- Icon -->
+                        <div class="icon">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                </div>
+
+                <!-- Col 2 -->
+                <a href="#" class="food-slide">
+                    <img src="img/food-galler-img-2.jpg" alt="food" class="img-fluid">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <i class="fas fa-plus fa-4x"></i>
+                    </div>
+                </a>
+
+                <!-- Col 3 -->
+                <a href="#" class="food-slide">
+                    <img src="img/food-galler-img-3.jpg" alt="food" class="img-fluid">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <i class="fas fa-plus fa-4x"></i>
+                    </div>
+                </a>
+
+                <!-- Col 4 -->
+                <a href="#" class="food-slide">
+                    <img src="img/food-galler-img-4.jpg" alt="food" class="img-fluid">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <i class="fas fa-plus fa-4x"></i>
+                    </div>
+                </a>
+
+                <!-- Col 5 -->
+                <a href="#" class="food-slide">
+                    <img src="img/food-galler-img-5.jpg" alt="food" class="img-fluid">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <i class="fas fa-plus fa-4x"></i>
+                    </div>
+                </a>
+
+                <!-- Col 6 -->
+                <a href="#" class="food-slide">
+                    <img src="img/food-galler-img-6.jpg" alt="food" class="img-fluid">
+                    <!-- Icon -->
+                    <div class="icon">
+                        <i class="fas fa-plus fa-4x"></i>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+<!--=========================================================================-->
+    <!-- Start Our Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="sec-title">
+                <h3 class="h2" data-title="our popular dishes">our popular dishes</h3>
+                <p class="text">our menu</p>
+            </div>
+
+            <!-- Swiper ---------------->
+            <div class="swiper menu-slider" style="padding-bottom: 50px;">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 ------------>
+                    <div class="swiper-slide">
+                        <!-- Heading -->
+                        <h4 class="heading">breakfast</h4>
+
+                        <!-- Row ------>
+                        <div class="row">
+                            <!-- Box 1 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">morning breakfast</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 2 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">morning breakfast</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 3 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">morning breakfast</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 4 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">morning breakfast</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 5 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">morning breakfast</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 6 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">morning breakfast</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 2 ------------>
+                    <div class="swiper-slide">
+                        <!-- Heading -->
+                        <h4 class="heading">lunch</h4>
+
+                        <!-- Row ------>
+                        <div class="row">
+                            <!-- Box 1 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious lunch</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 2 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious lunch</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 3 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious lunch</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 4 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious lunch</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 3 ------------>
+                    <div class="swiper-slide">
+                        <!-- Heading -->
+                        <h4 class="heading">dinner</h4>
+
+                        <!-- Row ------>
+                        <div class="row">
+                            <!-- Box 1 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious dinner</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 2 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious dinner</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 3 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious dinner</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 4 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious dinner</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 5 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">delicious dinner</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 4 ------------>
+                    <div class="swiper-slide">
+                        <!-- Heading -->
+                        <h4 class="heading">drinks</h4>
+
+                        <!-- Row ------>
+                        <div class="row">
+                            <!-- Box 1 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">cold drinks</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 2 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">cold drinks</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 3 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">cold drinks</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 4 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">cold drinks</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 5 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">cold drinks</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 6 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">cold drinks</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 5 ------------>
+                    <div class="swiper-slide">
+                        <!-- Heading -->
+                        <h4 class="heading">dessert</h4>
+
+                        <!-- Row ------>
+                        <div class="row">
+                            <!-- Box 1 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">sweet dessert</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 2 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">sweet dessert</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 3 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">sweet dessert</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                            <!-- Box 4 ----->
+                            <div class="box">
+                                <!-- Text ------->
+                                <div class="text">
+                                    <h5 class="h4">sweet dessert</h5>
+                                    <p class="text-muted">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </div>
+                                <!-- Price -->
+                                <span class="price">$49.99</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Dots Control ----------------->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Our Menu Section -->
+<!--=========================================================================-->
+    <!-- Start Order Section -->
+    <section id="order">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="sec-title">
+                <h3 class="h2" data-title="fast home delivery">fast home delivery</h3>
+                <p class="text">order now</p>
+            </div>
+
+        <!-- Form ------>
+        <form id="form">
+            <!-- Row ------>
+            <div class="row">
+                <!-- Col 1 ----->
+                <div class="col">
+                    <!-- Input Control ------->
+                    <div class="input-control">
+                        <label for="userName" class="label">full name</label>
+                        <input type="text" name="Full Name" id="userName" placeholder="Enter Your Name">
+                        <!-- Erorr Message ----->
+                        <div class="erorr"></div>
+                    </div>
+
+                    <!-- Input Control ------->
+                    <div class="input-control">
+                        <label for="foodName" class="label">food name</label>
+                        <input type="text" name="Food Name" id="foodName" placeholder="Food You Want">
+                        <!-- Erorr Message ----->
+                        <div class="erorr"></div>
+                    </div>
+
+                    <!-- Input Control ------->
+                    <div class="input-control">
+                        <label for="orderDetails" class="label">Order Details</label>
+                        <input type="text" name="Order Details" id="orderDetails" placeholder="specifics With Food">
+                        <!-- Erorr Message ----->
+                        <div class="erorr"></div>
+                    </div>
+                    <!-- Address ------->
+                    <div class="address">
+                        <label for="textArea" class="label">your address</label>
+                        <textarea name="Your Address" id="textArea" placeholder="Enter Your Address"></textarea>
+                    </div>
+                </div>
+
+                <!-- Col 2 ----->
+                <div class="col">
+                    <!-- Input Control ------->
+                    <div class="input-control">
+                        <label for="number" class="label">number</label>
+                        <input type="number" name="Number" id="number" placeholder="Enter Your Number">
+                        <!-- Erorr Message ----->
+                        <div class="erorr"></div>
+                    </div>
+                    <!-- Input Control ------->
+                    <div class="input-control">
+                        <label for="howMuch" class="label">how much</label>
+                        <input type="text" name="how much" id="howMuch" placeholder="how many you want">
+                        <!-- Erorr Message ----->
+                        <div class="erorr"></div>
+                    </div>
+                    <!-- Input Control ------->
+                    <div class="input-control">
+                        <label for="date" class="label">when you want</label>
+                        <input type="date" name="Order Details" id="date">
+                        <!-- Erorr Message ----->
+                        <div class="erorr"></div>
+                    </div>
+                    <!-- Map Address ------->
+                    <div class="address">
+                        <label class="label">our address</label>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                        1d13813.242678659242!2d31.32135283789012!3d30.056628182388565!2m3!
+                        1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e5d94c66301%
+                        3A0xddddf100de42206c!2sNasr%20City%2C%20Al%20Manteqah%20Al%20Oula%2
+                        C%20Nasr%20City%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v165157
+                        9029484!5m2!1sen!2seg" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+                <!-- Submit Input -------->
+                <input type="submit" value="Order Now" class="special-link">
+            </form>
+
+        </div>
+    </section>
+    <!-- End Order Section -->
+<!--=========================================================================-->
+    <!-- Start Blogs Section -->
+    <section id="blogs">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="sec-title">
+                <h3 class="h2" data-title="our latest posts">our latest posts</h3>
+                <p class="text">our blogs</p>
+            </div>
+
+            <!-- Swiper ---------------->
+            <div class="swiper slider" style="padding-bottom: 40px;">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 ------------>
+                    <div class="swiper-slide">
+                        <!-- Blog 1 ----->
+                        <div class="blog">
+                            <img src="img/blog-img-1.jpg" alt="blog" class="img-fluid">
+                            <!-- Blog Body -->
+                            <div class="blog-body">
+                                <!-- Info ------->
+                                <div class="info">
+                                    <!-- Date ------>
+                                    <div class="date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>4st may, 2022</span>
+                                    </div>
+                                    <!-- Publisher ------->
+                                    <div class="publisher">
+                                        <i class="fas fa-user"></i>
+                                        <span class="role">bt admin</span>
+                                    </div>
+                                </div>
+                                <!-- Title ------->
+                                <div class="title">
+                                    <div class="text">blog title goes here</div>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit.
+                                    </p>
+                                    <!-- Special Link -->
+                                    <a href="#" class="special-link">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 ------------>
+                    <div class="swiper-slide">
+                        <!-- Blog 2 ----->
+                        <div class="blog">
+                            <img src="img/blog-img-2.jpg" alt="blog" class="img-fluid">
+                            <!-- Blog Body -->
+                            <div class="blog-body">
+                                <!-- Info ------->
+                                <div class="info">
+                                    <!-- Date ------>
+                                    <div class="date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>4st may, 2022</span>
+                                    </div>
+                                    <!-- Publisher ------->
+                                    <div class="publisher">
+                                        <i class="fas fa-user"></i>
+                                        <span class="role">bt admin</span>
+                                    </div>
+                                </div>
+                                <!-- Title ------->
+                                <div class="title">
+                                    <div class="text">blog title goes here</div>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit.
+                                    </p>
+                                    <!-- Special Link -->
+                                    <a href="#" class="special-link">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 ------------>
+                    <div class="swiper-slide">
+                        <!-- Blog 3 ----->
+                        <div class="blog">
+                            <img src="img/blog-img-3.jpg" alt="blog" class="img-fluid">
+                            <!-- Blog Body -->
+                            <div class="blog-body">
+                                <!-- Info ------->
+                                <div class="info">
+                                    <!-- Date ------>
+                                    <div class="date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>4st may, 2022</span>
+                                    </div>
+                                    <!-- Publisher ------->
+                                    <div class="publisher">
+                                        <i class="fas fa-user"></i>
+                                        <span class="role">bt admin</span>
+                                    </div>
+                                </div>
+                                <!-- Title ------->
+                                <div class="title">
+                                    <div class="text">blog title goes here</div>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit.
+                                    </p>
+                                    <!-- Special Link -->
+                                    <a href="#" class="special-link">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 ------------>
+                    <div class="swiper-slide">
+                        <!-- Blog 4 ----->
+                        <div class="blog">
+                            <img src="img/blog-img-4.jpg" alt="blog" class="img-fluid">
+                            <!-- Blog Body -->
+                            <div class="blog-body">
+                                <!-- Info ------->
+                                <div class="info">
+                                    <!-- Date ------>
+                                    <div class="date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>4st may, 2022</span>
+                                    </div>
+                                    <!-- Publisher ------->
+                                    <div class="publisher">
+                                        <i class="fas fa-user"></i>
+                                        <span class="role">bt admin</span>
+                                    </div>
+                                </div>
+                                <!-- Title ------->
+                                <div class="title">
+                                    <div class="text">blog title goes here</div>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit.
+                                    </p>
+                                    <!-- Special Link -->
+                                    <a href="#" class="special-link">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 ------------>
+                    <div class="swiper-slide">
+                        <!-- Blog 5 ----->
+                        <div class="blog">
+                            <img src="img/blog-img-5.jpg" alt="blog" class="img-fluid">
+                            <!-- Blog Body -->
+                            <div class="blog-body">
+                                <!-- Info ------->
+                                <div class="info">
+                                    <!-- Date ------>
+                                    <div class="date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>4st may, 2022</span>
+                                    </div>
+                                    <!-- Publisher ------->
+                                    <div class="publisher">
+                                        <i class="fas fa-user"></i>
+                                        <span class="role">bt admin</span>
+                                    </div>
+                                </div>
+                                <!-- Title ------->
+                                <div class="title">
+                                    <div class="text">blog title goes here</div>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit.
+                                    </p>
+                                    <!-- Special Link -->
+                                    <a href="#" class="special-link">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 ------------>
+                    <div class="swiper-slide">
+                        <!-- Blog 6 ----->
+                        <div class="blog">
+                            <img src="img/blog-img-6.jpg" alt="blog" class="img-fluid">
+                            <!-- Blog Body -->
+                            <div class="blog-body">
+                                <!-- Info ------->
+                                <div class="info">
+                                    <!-- Date ------>
+                                    <div class="date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>4st may, 2022</span>
+                                    </div>
+                                    <!-- Publisher ------->
+                                    <div class="publisher">
+                                        <i class="fas fa-user"></i>
+                                        <span class="role">bt admin</span>
+                                    </div>
+                                </div>
+                                <!-- Title ------->
+                                <div class="title">
+                                    <div class="text">blog title goes here</div>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet 
+                                        consectetur adipisicing elit.
+                                    </p>
+                                    <!-- Special Link -->
+                                    <a href="#" class="special-link">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Dots Control ----------------->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blogs Section -->
+<!--=========================================================================-->
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- Row ------>
+            <div class="row">
+                <!-- Col 1 ----->
+                <div class="col">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <strong class="text">opoening hours</strong>
+                    <span>7.00am to 12.00pm</span>
+                </div>
+                <!-- Col 2 ----->
+                <div class="col">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <strong class="text">phone</strong>
+                    <span>01151146084</span>
+                </div>
+                <!-- Col 3 ----->
+                <div class="col">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <strong class="text">email</strong>
+                    <span>mokasha773@gmail.com</span>
+                </div>
+                <!-- Col 4 ----->
+                <div class="col">
+                    <div class="icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <strong class="text">address</strong>
+                    <span>cairo-egypt, 13z</span>
+                </div>
+            </div>
+
+            <!-- Social Link -->
+            <div class="social">
+                <!-- Facebook ---------->
+                <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Linkedinn ---------->
+                <a href="#" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- githup ---------->
+                <a href="#" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- instagram ---------->
+                <a href="#" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="created-by">
+                created by <span>mohaamed sherif</span>
+                &copy; 2022
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+<!--=========================================================================-->
+    <!-- Scroll To Top Btn -->
+    <button id="up">
+        <i class="fas fa-angle-up"></i>
+    </button>
+<!--=========================================================================-->
+    <!--============== Main js File ==============-->
+    <script src="main.js"></script>
+    <!--============== Swiper JS ==============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--============== Light Gallery Libary Link js ==============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+<!--=========================================================================-->
+    <!-- Initialize Swiper ---------->
+    <script>
+        var swiper = new Swiper(".slider", {
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            autoPaly: {
+                deleay: 4000,
+                displayOnInterAction: false,
+            },
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+
+    <!-- Menu Slider ---------------------------->
+    <script>
+        var swiper = new Swiper(".menu-slider", {
+            grabCursor: true,
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            autoPaly: {
+                deleay: 4000,
+                displayOnInterAction: false,
+            },
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+
+                768: {
+                    slidesPerView: 1,
+                },
+
+                1024: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+    </script>
+    
+    <!-- Light Gallery Script -->
+    <script>
+        lightGallery(document.querySelector(".gallery-container"));
+    </script>
+
+        <!-- Slides Grid -------------------------->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+
+            grid: {
+                rows: 2,
+            },
+
+            spaceBetween: 30,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
+
+
